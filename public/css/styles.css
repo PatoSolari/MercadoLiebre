@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.header{
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.logo-barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 50%;
+}
+
+.barra-busqueda{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.barra-busqueda input{
+    padding: 6px;
+    border-style: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 80%;
+}
+.barra-busqueda i{
+align-self: center;
+justify-self: center;
+padding: 5px;
+}
+.lupa{
+    border-style: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+    
+}
+.lupa:hover{
+    cursor: pointer;
+}
+.logo-barra p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+.logo-barra p i{
+    padding: 3px;
+}
+li{
+    font-size: 12px;
+    list-style-type: none;
+}
+header nav{
+    margin: 10px 0px 10px 0px;
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.lista-izq, .lista-der{
+    display: none;
+}
+.burger-menu{
+    text-align: center;
+    padding-bottom: 0px;
+    justify-self: flex-end;
+    margin: auto;
+}
+.burger-menu i{
+    color: white;
+    background-color: #1259c3;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+main section{
+    width: 90%;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+}
+.logoEnvio{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #39b54a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 700ms;
+}
+.logoEnvio i{
+    padding-top: 6px;
+    color: #39b54a;
+
+}
+.logoEnvio:hover{
+transform: rotateZ(-90deg);
+}
+.articulo{
+    margin: 10px;
+    width: 100%;
+}
+.articulo:hover{
+    box-shadow: 0px 0px 10px 1px rgb(100,100,100);
+}
+.articulo:hover > .cuadroDescripcion .descripcion{
+    display: block;
+}
+.articulo img{
+    width: 100%;
+}
+main img{
+    width: 100%;
+}
+h3{
+    font-size: 24px;
+    color:#666;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cuadroDescripcion{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 1px;
+    border-top-color: #ebebeb;
+    border-top-style: solid;
+    position: relative;
+}
+.PyD{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    justify-self: center;
+    padding-left: 35px;
+}
+.descripcion{
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+footer{
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    background-color: white;
+}
+footer section{
+    width: 70%;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+footer section h4{
+    font-size: 16px;
+}
+footer section i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.conteinterSections{
+    margin: auto;
+}
+/****** REGISTER*******/
+.formRegistro{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+.labelForm{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    font-size: 16px;
+}
+.inputRegistro{
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.optionRegistro{
+    color: #666;
+    margin-left: 20px;
+}
+.optionRegistro input{
+    margin-right: 5px;
+}
+.checkContainer{
+    display: flex;
+    flex-direction: column;
+}
+.checkRegistro{
+    color: #666;
+    margin-left: 20px;
+    padding: 7px;
+}
+.checkRegistro input{
+    margin-right: 5px;
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttonContainer button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px;
+    color: white;
+    background-color: #666;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    transition: all 0.5s;
+}
+.buttonContainer button:hover{
+    background-color: #1259c3;
+    cursor: pointer;
+}
+@media screen and (min-width: 479px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav ul li{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    header nav ul li i{
+        margin-left: 4px;
+    }
+    .logo{
+        width: 33%;
+    }
+    .barra-busqueda{
+        width: 33%;
+    }
+    .logo-barra p{
+        width: 33%;
+        margin-top: 0px;
+    }
+    h3{
+        text-align: start;
+    }
+    .descripcion{
+        display: block;
+    }
+    .lista-izq, .lista-der{
+        display: flex;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    .productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .productos article{
+        width: 45%;
+        margin: 3px;
+    }
+    /****** REGISTRO ********/
+    .titulo{
+        text-align: center;
+    }
+    .formRegistro{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 895px){
+    .descripcion{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+    .productos article{
+        width: 24%;
+        margin: 3px;
+    }
+    .footer{
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer section{
+        width: 31%;
+    }
+    footer p{
+        width: 90%;
+    }
+    /******** REGISTRO **********/
+    .formRegistro{
+        width: 50%;
+    }
+}
