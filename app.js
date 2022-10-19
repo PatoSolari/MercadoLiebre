@@ -6,7 +6,7 @@ const path = require('path');
 const publicFolderPath = path.resolve('public');
 
 app.use(express.json());
-app.use(express.urlencoded());
+//app.use(express.urlencoded());
 
 app.use(express.static(publicFolderPath));
 
